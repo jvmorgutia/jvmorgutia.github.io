@@ -479,33 +479,14 @@
         <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
           <h4>Shoot me a message!</h4>
 
-                <form action="http://formmail.dreamhost.com/cgi-bin/formmail.cgi" method="POST">
-                    <!-- NAME INPUT -->
-                    <p>
-                        <input type=hidden name="recipient" value="jesse@jessemorgutia.com">
-                        <input style="opacity: 1;" name="Name" id="name" class="text " type="text" placeholder="Name">
-                    </p>
-
-                    <!-- EMAIL INPUT -->
-                    <p>
-                        <input style="opacity: 1;" name="Email" id="message" class="text " type="text" placeholder="Email">
-                    </p>
-
-                    <!-- PHONE NUMBER INPUT -->
-                    <p>
-                        <input style="opacity: 1;" name="Phone" id="message" class="text " type="text" placeholder="Phone">
-                    </p>
-
-                    <!-- MESSAGE TEXTAREA -->
-                    <p>
-          <textarea name="Message" id="message" class="textarea " placeholder="Your Message"></textarea><br>
-                        <!-- SUBMIT BUTTON -->
-                        <input name="submit" value="Send" id="submit" class="button" type="submit">
-                    </p>
-                    <p class="loader">&nbsp;</p>
-                    <input type=hidden name="subject" value="JESSE, Contact this person ASAP!" target="self">
-                    <input type=hidden name="redirect" value="http://jessemorgutia.com/contact.htm">
-                </form>
+                <form action="http://formspree.io/jvmorgutia@gmail.com" method="POST">
+                    <p><input style="opacity: 1;" name="name" id="name" class="text " type="text" placeholder="Name"></p>
+                    <p><input style="opacity: 1;" type="email" name="_replyto" placeholder="Email"></p>
+                    <p><input style="opacity: 1;" type="tel" name="phone" placeholder="Phone"></p>
+                    <p><input style="opacity: 1;" type="text" name="message" placeholder="Message"></p>
+                    <p><input type="submit" value="Send" id="submit" class="button"></p>
+                                    
+            </form>
         </div>
         </div>
             </div>
