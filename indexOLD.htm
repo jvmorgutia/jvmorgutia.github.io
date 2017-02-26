@@ -4,26 +4,37 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="author" content="Jvmorgutia">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Jesse Morgutia">
     <meta name="description" content="Jesse Morgutia's online software engineering portfolio">
+    
+    <!-- Google Analytics -->
+    <script></script>
+
     <title>Jesse Morgutia - Software Engineer Portfolio</title>
 
-    <!-- Google Analytics -->
-    <script>    /*      To be filled in later :)     */    </script>
-    
-    <!-- Normalize CSS -->
-    <link rel="stylesheet" href"css/normalize.css">
     <!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <!-- Main CSS-->
-    <link rel="stylesheet" href="css/main.css">    
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link href="css/main.css" rel="stylesheet">
+  
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+
+
+    <!-- For IE8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 
 <!-- data-spy and data-target are used for Bootstrap's scrollspy -->
+
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="gradientWrap"></div>
@@ -65,43 +76,50 @@
             </div>
         </div>
     </nav>
-
     <!-- Content Container -->
-    <section class="body-container">
+    <section class="container body-container">
 
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="centered-container">
-                <p class="hero-title">Jesse Morgutia</p>
-                <hr></hr>               
-                <p class="subtitle">Software Engineer</p>
+        <!-- Introduction Section -->
+        <section id="hero" class="hero">
+            <div class="section-container-top">
+        <div class="hero-title-container">
+          <p class="hero-title">Jesse Morgutia</p>
+        </div>
+               
+        <div class="hero-subtitle-container">
+          <p class="hero-subtitle">Software Engineer</p>
+        </div>
             </div>
-            <div class="scroll-down">
-                <a class="btn page-scroll" href="#about">
-                    <i class="fa fa-angle-down fa-fw"></i>
-                </a>
-            </div>
+      <div class="scroll-img">
+        <a class="page-scroll" href="#about"><img src="img/main-arrow.png" style="height:100%;width:auto;"></a>
+      </div>
+
         </section>
 
         <!-- About Section -->
 
         <section id="about">
             <div class="section-container">
-               <!-- 
-                    <h2 class="section-title">About Me</h2>
-                    <br><br>
-                -->
-                <div class="about-img text-center text-padding">
+
+
+                <h2 class="section-title">About Me</h2>
+                <br><br>
+                <div class="about-img center text-padding">
                   <img alt="Jesse Morgutia's Picture" src="img/myavatar.jpg" class="myAvatar">
-                </div>        
-                <div class="about-desc text-left text-padding">
-                    <h2 class="subtitle text-center" id="about-title"> Hi, I'm Jesse Morgutia</h2>
-                    <hr></hr>
-                    <h4>Software Engineer from So-Cal</h4>
-                    <p>Programmer, developer, and overall geek at heart. I love technology, both hardware and software. I'm most passionate about mobile applications, game development, and space technology.</p>
-                    <p>Outside of technology I have a passion for nature, different foods, and music. I love mountain biking, hiking, and trying new food. In my free time I play the trumpet, trombone, and bass.</p>
-                    <a class = "button btn" href = "resume.pdf">Download My Resume </a>
+                  
                 </div>
+        
+        <div class="about-desc left text-padding">
+                    <h2> Jesse Morgutia </h2>
+          <h4>Software Engineer from So-Cal</h4>
+          <p>
+            Programmer, developer, and overall geek at heart. I love technology, both hardware and software. I'm most passionate about mobile applications, game development, and space technology.
+          </p>
+          <p>
+            Outside of technology I have a passion for nature, different foods, and music. I love mountain biking, hiking, and trying new food. In my free time I play the trumpet, trombone, and bass.
+          </p>
+          <a class = "click-button btn" href = "resume.pdf">Download My Resume </a>
+        </div>
             </div>
         </section>
 
@@ -346,7 +364,7 @@
 
                     <a href="http://github.com/jvmorgutia/JNotepad" class="project-container">
                         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                            <img src="img/content/projects/jnotepad.png" class="expandable-image">
+                            <img src="img/content/projects/jnotepad.png" class="fit-img">
                         </div>
 
                         <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
@@ -360,7 +378,7 @@
                     </a>
                 <a href="http://github.com/jvmorgutia/Alarmcast" class="project-container">
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                        <img src="img/content/projects/phone.png" class="expandable-image">
+                        <img src="img/content/projects/phone.png" class="fit-img">
                     </div>
                     
                     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
@@ -376,7 +394,7 @@
 
                 <a href="http://github.com/jvmorgutia/BookMarker" class="project-container">
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                        <img src="img/content/projects/qm.png" class="expandable-image">
+                        <img src="img/content/projects/qm.png" class="fit-img">
                     </div>
                     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
                         <h4>  BookMarker </h4>
@@ -391,7 +409,7 @@
                 </a>
                 <a href="http://github.com/jvmorgutia/SurfCity" class="project-container">
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                        <img src="img/content/projects/sc.png" class="expandable-image">
+                        <img src="img/content/projects/sc.png" class="fit-img">
                     </div>
                     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
                         <h4> Surf City Shop  </h4>
@@ -488,8 +506,8 @@
         <!--a class="page-scroll" href="#page-top"><img src="img/up-arrow.png" style="height: 45px; margin: 2px; opacity: 0.6;"></a-->
         <h4> Copyright &copy; 2015 - Jesse Morgutia </h4><br>
     <ul>
-    <li><a href="http://linkedin.com/in/jvmorgutia" class="footer-link"><i class="fa fa-linkedin fa-2x"></i></a></li>
-    <li><a href="http://github.com/jvmorgutia" class="footer-link"><i class="fa fa-github fa-2x"></i></a></li>
+    <li><a href="http://linkedin.com/in/jvmorgutia"><i class="fa fa-linkedin fa-2x"></i><a></li>
+    <li><a href="http://github.com/jvmorgutia"><i class="fa fa-github fa-2x"></i><a></li>
     </ul>
     </div>
     </footer>
