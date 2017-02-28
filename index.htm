@@ -10,19 +10,22 @@
     <title>Jesse Morgutia - Software Engineer Portfolio</title>
 
     <!-- Google Analytics -->
-    <script>    /*      To be filled in later :)     */    </script>
-    
+    <script>
+        /*      To be filled in later :)     */
+    </script>
+
     <!-- Normalize CSS -->
-    <link rel="stylesheet" href"css/normalize.css">
+    <link rel="stylesheet" href "css/normalize.css">
     <!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <!-- Main CSS-->
-    <link rel="stylesheet" href="css/main.css">    
+    <link rel="stylesheet" href="css/main.css">
     <!-- FontAwesome -->
     <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 </head>
 
 <!-- data-spy and data-target are used for Bootstrap's scrollspy -->
+
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -30,10 +33,10 @@
         <div class="container">
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    <span class="sr-only"></span>
+                    <div class="icon-bar"></div>
+                    <div class="icon-bar"></div>
+                    <div class="icon-bar"></div>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top"><img alt="Jesse Morgutia" src="img/icon-logo.png" style="height: 50px;"></a>
             </div>
@@ -70,11 +73,11 @@
     <section class="body-container">
 
         <!-- Hero Section -->
-        <section class="hero">
+        <section id="hero">
             <div class="centered-container">
-                <p class="hero-title">Jesse Morgutia</p>
-                <hr></hr>               
-                <p class="subtitle">Software Engineer</p>
+                <p id="hero-title">Jesse Morgutia</p>
+                <hr>
+                <p id="hero-subtitle" class="subtitle">Software Engineer</p>
             </div>
             <div class="scroll-down">
                 <a class="btn page-scroll" href="#about">
@@ -87,20 +90,18 @@
 
         <section id="about">
             <div class="section-container">
-               <!-- 
-                    <h2 class="section-title">About Me</h2>
-                    <br><br>
-                -->
-                <div class="about-img text-center text-padding">
-                  <img alt="Jesse Morgutia's Picture" src="img/myavatar.jpg" class="myAvatar">
-                </div>        
+                <div class="about-image text-center text-padding">
+                    <img alt="Jesse Morgutia's Picture" src="img/myavatar.jpg" class="myAvatar">
+                </div>
                 <div class="about-desc text-left text-padding">
-                    <h2 class="subtitle text-center" id="about-title"> Hi, I'm Jesse Morgutia</h2>
-                    <hr></hr>
+                    <h2 class="section-title text-center" id="about-title"> Hi, I'm Jesse Morgutia</h2>
+                    <hr class="blue-border">
                     <h4>Software Engineer from So-Cal</h4>
-                    <p>Programmer, developer, and overall geek at heart. I love technology, both hardware and software. I'm most passionate about mobile applications, game development, and space technology.</p>
-                    <p>Outside of technology I have a passion for nature, different foods, and music. I love mountain biking, hiking, and trying new food. In my free time I play the trumpet, trombone, and bass.</p>
-                    <a class = "button btn" href = "resume.pdf">Download My Resume </a>
+                    <p>Programmer, developer, and overall geek at heart. I love technology, both hardware and software. I'm
+                        most passionate about mobile applications, game development, and space technology.</p>
+                    <p>Outside of technology I have a passion for nature, different foods, and music. I love mountain biking,
+                        hiking, and trying new food. In my free time I play the trumpet, trombone, and bass.</p>
+                    <a class="button btn" href="resume.pdf">Download My Resume </a>
                 </div>
             </div>
         </section>
@@ -108,45 +109,32 @@
         <!-- Education Section -->
         <section id="education">
             <div class="section-container">
-
                 <h2 class="section-title">Education</h2>
-                <div class="content-section education">
+                <hr class="blue-border">
+                <div id="education-background" class="content-section">
                     <img alt="Cal Poly" src="img/content/education/calpoly.png" style="height: 80px;">
-
                     <h4>California State Polytechnic University</h4>
-
-
-                    <h5>
-                        Pomona, CA<br>
-                        Bachelor of Science, Computer Science &nbsp;|&nbsp; Anticipated
-                        June 2015
-                    </h5>
-                    
-
-
-                    <!--p><br>
-                    Computer Networks, Computer Graphics,
-                    Database Systems, Advanced Data Structures, Computer
-                    Architecture, Object Oriented Programming.</p-->
-          
-          <strong>Relevant Coursework: </strong><br>
-                    <ul class="split-list">
-                        <li>Computer Architecture</li>
-                        <div class="section-splitter-xsmall"></div>
-                        <li>Computer Networks</li>
-                        <div class="section-splitter-xsmall"></div>
-                        <li>Computer Graphics</li>
-                    </ul>
-                    <ul class="split-list">
-                        <li>Database Systems</li>
-                        <div class="section-splitter-xsmall"></div>
-                        <li>Discrete Structures</li>
-                        <div class="section-splitter-xsmall"></div>
-                        <li>Data Structures &amp; Algorithms</li>
-                    </ul>
-
+                    <h5>Pomona, CA</h5>
+                    <h5>Sept 2010 to June 2015</h5>
+                    <h5 class="thick">Bachelor of Science, Computer Science</h5>
+                    <h5 class="bottom-border">Relevant Coursework</h5>
+                    <div>
+                        <ul class="split-list">
+                            <li>Computer Architecture</li>
+                            <div class="section-splitter-xsmall"></div>
+                            <li>Computer Networks</li>
+                            <div class="section-splitter-xsmall"></div>
+                            <li>Computer Graphics</li>
+                        </ul>
+                        <ul class="split-list">
+                            <li>Database Systems</li>
+                            <div class="section-splitter-xsmall"></div>
+                            <li>Discrete Structures</li>
+                            <div class="section-splitter-xsmall"></div>
+                            <li>Data Structures &amp; Algorithms</li>
+                        </ul>
+                    </div>
                 </div>
-
             </div>
         </section>
 
@@ -154,42 +142,44 @@
         <section id="skills">
             <div class="section-container">
 
-                <h2 class="section-title">My Skills</h2><br>
+                <h2 class="section-title">My Skills</h2>
+                <hr class="blue-border">
+
                 <h3 class="subsection-title"> Languages </h3>
                 <div class="section-splitter-small"></div>
 
                 <div class="mini-content-section">
-                    <img class="small-img" alt="Java" src="img/content/skills/java.png">
+                    <img class="small-image" alt="Java" src="img/content/skills/java.png">
                     <div>Java</div>
                 </div>
 
                 <div class="mini-content-section">
-                    <img class="small-img" alt="C++" src="img/content/skills/cpp.png">
+                    <img class="small-image" alt="C++" src="img/content/skills/cpp.png">
                     <div>C++</div>
                 </div>
 
                 <div class="mini-content-section">
-                    <img class="small-img" alt="SQL" src="img/content/skills/sql.png">
+                    <img class="small-image" alt="SQL" src="img/content/skills/sql.png">
                     <div>SQL</div>
                 </div>
 
                 <div class="mini-content-section">
-                    <img class="small-img" alt="C#" src="img/content/skills/csharp.png">
+                    <img class="small-image" alt="C#" src="img/content/skills/csharp.png">
                     <div>C&#35</div>
                 </div>
 
                 <div class="mini-content-section">
-                    <img class="small-img" alt="Python" src="img/content/skills/python.png">
+                    <img class="small-image" alt="Python" src="img/content/skills/python.png">
                     <div>Python</div>
                 </div>
 
                 <div class="mini-content-section">
-                    <img class="small-img" alt="HTML 5" src="img/content/skills/html.png">
+                    <img class="small-image" alt="HTML 5" src="img/content/skills/html.png">
                     <div>HTML 5</div>
                 </div>
 
                 <div class="mini-content-section">
-                    <img class="small-img" alt="CSS 3" src="img/content/skills/css.png">
+                    <img class="small-image" alt="CSS 3" src="img/content/skills/css.png">
                     <div>CSS 3</div>
                 </div>
 
@@ -199,32 +189,32 @@
                 <div class="section-splitter-small"></div>
 
                 <div class="mini-content-section">
-                    <img class="small-img" alt="Eclipse" src="img/content/skills/eclipse.png">
+                    <img class="small-image" alt="Eclipse" src="img/content/skills/eclipse.png">
                     <div>Eclipse</div>
                 </div>
 
                 <div class="mini-content-section">
-                    <img class="small-img" alt="Microsoft Visual Studio" src="img/content/skills/visualstudio.png">
+                    <img class="small-image" alt="Microsoft Visual Studio" src="img/content/skills/visualstudio.png">
                     <div>Visual Studio</div>
                 </div>
 
                 <div class="mini-content-section">
-                    <img class="small-img" alt="Microsoft SQL Server" src="img/content/skills/msSQLserver.png">
+                    <img class="small-image" alt="Microsoft SQL Server" src="img/content/skills/msSQLserver.png">
                     <div>Microsoft SQL Server</div>
                 </div>
 
                 <div class="mini-content-section">
-                    <img class="small-img" alt="Adobe Photoshop" src="img/content/skills/ps.png">
+                    <img class="small-image" alt="Adobe Photoshop" src="img/content/skills/ps.png">
                     <div>Adobe Photoshop</div>
                 </div>
 
                 <div class="mini-content-section">
-                    <img class="small-img" alt="Adobe Illustrator" src="img/content/skills/ai.png">
+                    <img class="small-image" alt="Adobe Illustrator" src="img/content/skills/ai.png">
                     <div>Adobe Illustrator</div>
                 </div>
 
                 <div class="mini-content-section">
-                    <img class="small-img" alt="Adobe Dreamweaver" src="img/content/skills/dw.png">
+                    <img class="small-image" alt="Adobe Dreamweaver" src="img/content/skills/dw.png">
                     <div>Adobe Dreamweaver</div>
                 </div>
 
@@ -236,8 +226,8 @@
             <div class="section-container">
 
                 <h2 class="section-title">Work Experience</h2>
-
-                 <div class="content-section work">
+                <hr class="blue-border">
+                <div class="content-section work">
                     <img alt="CU Direct" src="img/content/work/cudirect.png" style="height: 80px;">
 
                     <h5>CU DIRECT</h5>
@@ -250,61 +240,56 @@
                     <h6>July 2015 to Present</h6>
 
                     <p>
-                        As a software developer, my responsibilities are focused toward developing new features for CU Direct's Lending software. My most recent projects include: <strong>web service integration, back end development, and UI developement</strong> using Visual Studio (C#, WPF using MVVM, XAML, SQL, JSON, XML).
+                        As a software developer, my responsibilities are focused toward developing new features for CU Direct's Lending software.
+                        My most recent projects include: <strong>web service integration, back end development, and UI developement</strong>                        using Visual Studio (C#, WPF using MVVM, XAML, SQL, JSON, XML).
                     </p>
                     <br>
                     <h4>Software Developer Trainee</h4>
                     <h6>Feb 2015 to July 2015</h6>
 
                     <p>
-                        Responsible for developing and contributing towards advancements of the AutoSMART 3.0 web/mobile application using <strong>ASP.NET MVC development in Visual Studio</strong> (C#, JavaScript, CSS, Razor and MS SQL Server). Engaged in a <strong>daily scrum</strong> with software designers, developers, and QA engineers in order to review outstanding issues and improve project quality prior to, during and after development
+                        Responsible for developing and contributing towards advancements of the AutoSMART 3.0 web/mobile application using <strong>ASP.NET MVC development in Visual Studio</strong>                        (C#, JavaScript, CSS, Razor and MS SQL Server). Engaged in a <strong>daily scrum</strong> with software
+                        designers, developers, and QA engineers in order to review outstanding issues and improve project
+                        quality prior to, during and after development
                     </p>
                     <br>
 
                     <h4>Quality Assurance Intern</h4>
                     <h6>July 2014 to June 2015</h6>
                     <p>
-                        QA resource for auto buying solutions, focusing on verification
-                        of application functionality, database integrity and software
-                        design. Responsible for writing test cases via <strong>Microsoft Test Manager</strong>
-                        and testing loan origination software such as web applications,
-                        smart client applications and mobile applications often <strong>
+                        QA resource for auto buying solutions, focusing on verification of application functionality, database integrity and software
+                        design. Responsible for writing test cases via <strong>Microsoft Test Manager</strong>                        and testing loan origination software such as web applications, smart client applications and mobile
+                        applications often <strong>
                             collaborating with software
                             designers and developers
-                        </strong> to meet requirements prior to development; similarly,
-                        I review current issues with developers in order to improve project
-                        quality prior to, and during test case execution.<br>
+                        </strong> to meet requirements prior to development; similarly, I review current issues with developers
+                        in order to improve project quality prior to, and during test case execution.<br>
                     </p>
 
-                </div>            
+                </div>
 
 
                 <div class="content-section work">
                     <h4>Lead Apple Certified Macintosh Technician</h4>
-                    <img alt="Bronco Bookstore" src="img/content/work/bookstore.png"
-                         style="height: 50px;">
+                    <img alt="Bronco Bookstore" src="img/content/work/bookstore.png" style="height: 50px;">
 
                     <h5>Cal Poly Pomona Foundation - Bronco Bookstore</h5>
 
 
                     <h6>
-                        Pomona, California &nbsp;|&nbsp; Sept 2012 to July
-                        2014
+                        Pomona, California &nbsp;|&nbsp; Sept 2012 to July 2014
                     </h6>
 
 
                     <p>
                         Responsible for diagnosing, <strong>troubleshooting and repairing problems</strong> related to computer
-                        hardware, software, and networking. This includes managing and <strong>maintaining multiple servers</strong>
-                        (client-update, data reporting, and file sharing) in order to maintain proper
-                        product presentation and report appropriate diagnostic results.
-                        Equally responsible for creating flyers, booklets, logos, graphics, and <strong>
+                        hardware, software, and networking. This includes managing and <strong>maintaining multiple servers</strong>                        (client-update, data reporting, and file sharing) in order to maintain proper product presentation
+                        and report appropriate diagnostic results. Equally responsible for creating flyers, booklets, logos,
+                        graphics, and <strong>
                             maintaining/editing
                             website data
-                        </strong>.
-                        Additionally responsible for training new employees and providing assistance to customer&#39;s
-                        technical needs both as a technician and Verizon Wireless
-                        representative. <strong>
+                        </strong>. Additionally responsible for training new employees and providing assistance to customer&#39;s
+                        technical needs both as a technician and Verizon Wireless representative. <strong>
                             Increased customer satisfaction rates for three consecutive
                             quarters
                         </strong>, based on Apple GSX reporting.
@@ -324,11 +309,9 @@
 
 
                     <p>
-                        Responsible for <strong>leading educational activities</strong> and encouraging
-                        student involvement in the classroom.
-                        Provide <strong>tutoring in math/science</strong> subjects in both, one-to-one
-                        and group study environments, with high school level
-                        students.
+                        Responsible for <strong>leading educational activities</strong> and encouraging student involvement
+                        in the classroom. Provide <strong>tutoring in math/science</strong> subjects in both, one-to-one
+                        and group study environments, with high school level students.
                 </div>
 
 
@@ -344,32 +327,34 @@
 
                 <h2 class="section-title">Projects</h2><br>
 
-                    <a href="http://github.com/jvmorgutia/JNotepad" class="project-container">
-                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                            <img src="img/content/projects/jnotepad.png" class="expandable-image">
-                        </div>
+                <a href="http://github.com/jvmorgutia/JNotepad" class="project-container">
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <img src="img/content/projects/jnotepad.png" class="expandable-image">
+                    </div>
 
-                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-                            <h4> JNotepad </h4>
-                            <h5 class="thin">Individual Project</h5>
+                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                        <h4> JNotepad </h4>
+                        <h5 class="thin">Individual Project</h5>
 
-                            <p>
-                                An enhanced clone of Microsoft's Notepad with additional features and syntax highlighting based on different computer languages. Compatible with OSX, Linux, and Windows. (for OSX, the standard windowed menu bar is displayed).
-                            </p>
-                        </div>
-                    </a>
+                        <p>
+                            An enhanced clone of Microsoft's Notepad with additional features and syntax highlighting based on different computer languages.
+                            Compatible with OSX, Linux, and Windows. (for OSX, the standard windowed menu bar is displayed).
+                        </p>
+                    </div>
+                </a>
                 <a href="http://github.com/jvmorgutia/Alarmcast" class="project-container">
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                         <img src="img/content/projects/phone.png" class="expandable-image">
                     </div>
-                    
+
                     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
                         <h4> AlarmCast </h4>
-                        <h5 class = "thin">Group Project
+                        <h5 class="thin">Group Project
                             <br>Role: Developer (UX/UI)</h5>
 
                         <p>
-                                An Android application that streams media content to a connected Chromecast (TV) when a device's alarm clock goes off. Written in Java (using Android Studio). 
+                            An Android application that streams media content to a connected Chromecast (TV) when a device's alarm clock goes off. Written
+                            in Java (using Android Studio).
                         </p>
                     </div>
                 </a>
@@ -379,13 +364,13 @@
                         <img src="img/content/projects/qm.png" class="expandable-image">
                     </div>
                     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-                        <h4>  BookMarker </h4>
-                                            <h5 class="thin">Individual Project</h5>
+                        <h4> BookMarker </h4>
+                        <h5 class="thin">Individual Project</h5>
 
                         <p>
-                            A web content editor used as a bookmark with any browser.
-                            Whenever needed, simply select text and click on the desired version of QuickMark.
-                            Current versions include <mark style="background: yellow;">highlighting</mark> and tExTCaSE changes.
+                            A web content editor used as a bookmark with any browser. Whenever needed, simply select text and click on the desired version
+                            of QuickMark. Current versions include
+                            <mark style="background: yellow;">highlighting</mark> and tExTCaSE changes.
                         </p>
                     </div>
                 </a>
@@ -394,46 +379,48 @@
                         <img src="img/content/projects/sc.png" class="expandable-image">
                     </div>
                     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-                        <h4> Surf City Shop  </h4>
-                                            <h5 class="thin">Individual Project</h5>
+                        <h4> Surf City Shop </h4>
+                        <h5 class="thin">Individual Project</h5>
 
 
                         <p>
-                            An originally styled template with included logo following an 'indie' theme.
-                            Includes tabbed sections which hide and display content. Created using
-                            HTML5, and CSS3. Free for all commercial and non-commercial use.
+                            An originally styled template with included logo following an 'indie' theme. Includes tabbed sections which hide and display
+                            content. Created using HTML5, and CSS3. Free for all commercial and non-commercial use.
                         </p>
                     </div>
                 </a>
-                <a href="http://github.com/jvmorgutia/CosmosKernel" class="project-container no-img">
-            
+                <a href="http://github.com/jvmorgutia/CosmosKernel" class="project-container no-image">
+
                     <h4> CosmosKernel</h4>
-                     <h5 class = "thin">Group Project
+                    <h5 class="thin">Group Project
                         <br>Role: Developer</h5>
                     <p>
-                        A command-line based operating system kernel.
-                        Implemented functionalities include the running of batch files, several commands, and an integrated file system. This kernel was created based on the CosmosOS user kit. Written in C#
+                        A command-line based operating system kernel. Implemented functionalities include the running of batch files, several commands,
+                        and an integrated file system. This kernel was created based on the CosmosOS user kit. Written in
+                        C#
                     </p>
-             
+
                 </a>
 
-                <a href="http://github.com/jvmorgutia/ToyCompiler" class="project-container no-img">
-                    
+                <a href="http://github.com/jvmorgutia/ToyCompiler" class="project-container no-image">
+
 
                     <h4> ToyCompiler</h4>
-                    <h5 class = "thin">Group Project
+                    <h5 class="thin">Group Project
                         <br>Role: Developer / Analyst</h5>
                     <p>
-                        A compiler for a new 'Toy' computer language. Currently included are Lexical and Semantical Analyzers for the compiler, a trie data structure token recorder, and a shift reduce parser. Created using Flex and Bison. Written in C.
+                        A compiler for a new 'Toy' computer language. Currently included are Lexical and Semantical Analyzers for the compiler, a
+                        trie data structure token recorder, and a shift reduce parser. Created using Flex and Bison. Written
+                        in C.
                     </p>
                 </a>
 
-                <a href="http://github.com/jvmorgutia" class="no-img github">
+                <a href="http://github.com/jvmorgutia" class="no-image github">
                     <i class="fa fa-github fa-5x"></i>
                 </a>
 
-                
-               
+
+
 
 
 
@@ -443,39 +430,40 @@
         <!-- Contact Section -->
         <section id="contact">
             <div class="section-container bottom">
-                <h2 class="section-title">Contact Me</h2><br></br>
-        <div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-          <br><h4>Contact details</h4>
-          <p>
-          <i class="fa fa-mobile fa-lg"></i> +1 (&#54;26)-38&#51;-&#51;&#51;94
-          </p>
-          <p>
-          <i class="fa fa-envelope-o"></i><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#106;&#118;&#109;&#111;&#114;&#103;&#117;&#116;&#105;&#97;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;"> &#106;&#118;&#109;&#111;&#114;&#103;&#117;&#116;&#105;&#97;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>
-          </p>
-          <br>
-          <p>
-          I am currently located in the heart of the San Gabriel Valley,
-                    but looking for positions in all of Southern California. If my experience
-                    is relevant to the qualifications you seek, please send me an email, text,
-                    or call me. I would love to hear from you!
-          </p>
-        </div>
-        
-        
-        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-          <h4>Shoot me a message!</h4>
+                <h2 class="section-title">Contact Me</h2>
+                <hr class="blue-border">
+                <div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <br>
+                        <h4>Contact details</h4>
+                        <p>
+                            <i class="fa fa-mobile fa-lg"></i> +1 (&#54;26)-38&#51;-&#51;&#51;94
+                        </p>
+                        <p>
+                            <i class="fa fa-envelope-o"></i><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#106;&#118;&#109;&#111;&#114;&#103;&#117;&#116;&#105;&#97;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;"> &#106;&#118;&#109;&#111;&#114;&#103;&#117;&#116;&#105;&#97;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>
+                        </p>
+                        <br>
+                        <p>
+                            I am currently located in the heart of the San Gabriel Valley, but looking for positions in all of Southern California. If
+                            my experience is relevant to the qualifications you seek, please send me an email, text, or call
+                            me. I would love to hear from you!
+                        </p>
+                    </div>
 
-                <form action="http://formspree.io/jvmorgutia@gmail.com" method="POST" target="_blank">
-                    <p><input style="opacity: 1;" name="name" id="name" class="text " type="text" placeholder="Name"></p>
-                    <p><input style="opacity: 1;" type="email" name="_replyto" placeholder="Email"></p>
-                    <p><input style="opacity: 1;" type="tel" name="phone" placeholder="Phone"></p>
-                    <p><textarea name="Message" id="message" class="textarea " placeholder="Your Message"></textarea><br></p>
-                    <p><input type="submit" value="Send" id="submit" class="button"></p>
-                    
-            </form>
-        </div>
-        </div>
+
+                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                        <h4>Shoot me a message!</h4>
+
+                        <form action="http://formspree.io/jvmorgutia@gmail.com" method="POST" target="_blank">
+                            <p><input style="opacity: 1;" name="name" id="name" class="text " type="text" placeholder="Name"></p>
+                            <p><input style="opacity: 1;" type="email" name="_replyto" placeholder="Email"></p>
+                            <p><input style="opacity: 1;" type="tel" name="phone" placeholder="Phone"></p>
+                            <p><textarea name="Message" id="message" class="textarea " placeholder="Your Message"></textarea><br></p>
+                            <p><input type="submit" value="Send" id="submit" class="button"></p>
+
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -484,25 +472,26 @@
     <!-- Footer -->
 
     <footer class="footer">
-    <div class="container">
-        <!--a class="page-scroll" href="#page-top"><img src="img/up-arrow.png" style="height: 45px; margin: 2px; opacity: 0.6;"></a-->
-        <h4> Copyright &copy; 2015 - Jesse Morgutia </h4><br>
-    <ul>
-    <li><a href="http://linkedin.com/in/jvmorgutia" class="footer-link"><i class="fa fa-linkedin fa-2x"></i></a></li>
-    <li><a href="http://github.com/jvmorgutia" class="footer-link"><i class="fa fa-github fa-2x"></i></a></li>
-    </ul>
-    </div>
+        <div class="container">
+            <!--a class="page-scroll" href="#page-top"><img src="img/up-arrow.png" style="height: 45px; margin: 2px; opacity: 0.6;"></a-->
+            <h4> Copyright &copy; 2015 - Jesse Morgutia </h4><br>
+            <ul>
+                <li><a href="http://linkedin.com/in/jvmorgutia" class="footer-link"><i class="fa fa-linkedin fa-2x"></i></a></li>
+                <li><a href="http://github.com/jvmorgutia" class="footer-link"><i class="fa fa-github fa-2x"></i></a></li>
+            </ul>
+        </div>
     </footer>
-  
-  
+
+
     <!-- jQuery Version 1.11.0 -->
     <script src="js/jquery-1.11.0.js"></script>
 
     <!-- Bootstrap JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-    <!-- Other JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
+        crossorigin="anonymous"></script>
+        <!-- Other JavaScript -->
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/main.js"></script>
 
 </body>
 
