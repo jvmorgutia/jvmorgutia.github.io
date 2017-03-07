@@ -101,9 +101,6 @@ footer ul li a {
     padding-right:45%
 }
 
-.navbar-default {
-    border-color:#555555;
-}
 .navbar-default .navbar-toggle {
     background-color: #FFFFFF;
 
@@ -174,15 +171,24 @@ footer ul li a {
 	margin: auto;
 }
 
+.subsection-container{
+    padding: 20px;
+    margin: 30px;
+    background-color: #FFF;
+}
+
 .content-section {
     width:92%;
     margin:30px auto;
     padding:20px 40px;
-    border: solid #494949 1px;
-    background-color:#fff;
+    background-color:#FFF;
+    
+    /* 
     background-color:rgba(255,255,255,.2);   
-}
+    border: solid #494949 1px;
 
+    */
+}
 
 .small-image {
     height:80px;
@@ -192,6 +198,10 @@ footer ul li a {
     max-width: 100%;
     max-height: 200px;
     width: auto;
+}
+
+.display-block{
+    display: block !important;
 }
 
 .bottom-border{
@@ -204,16 +214,9 @@ footer ul li a {
 	display: flex;
     align-items: center;
 	width:92%;
-    margin:15px auto;
     padding:20px 20px;
-    
-    background-color:#000;
-    background-color:rgba(255,255,255,.2);
     color: #333;
     text-decoration: none;
-    -webkit-box-shadow: 0px 2px 14px -5px rgba(0,0,0,0.25);
-    -moz-box-shadow: 0px 2px 14px -5px rgba(0,0,0,0.25);
-    box-shadow: 0px 2px 14px -5px rgba(0,0,0,0.25);
 }
 
 /*===== SPECIFIC CLASSES =====*/
@@ -229,6 +232,7 @@ footer ul li a {
     background-repeat:no-repeat;
     background-size: cover;
 	height: 100vh;
+    min-height: 400px;
     background-color:#292929; 
     display: block;
 }
@@ -271,27 +275,32 @@ footer ul li a {
 }
 
 /* -- ABOUT -- */
-.myAvatar {
+#myAvatar {
     margin: 10% auto;
     width:92%;
-	border-radius: 6%;
+	border-radius: 6px;
 	-webkit-box-shadow: -2px -1px 43px -9px rgba(0,0,0,0.75);
     -moz-box-shadow: -2px -1px 43px -9px rgba(0,0,0,0.75);
     box-shadow: -2px -1px 43px -9px rgba(0,0,0,0.75);
 }
 
-.about-image{
+#about-image{
 	width: 38%;
 	padding-left: 4%;
     display: inline-block
 }
 
-.about-desc{
+#about-desc{
 	width: 60%;    
+}
+
+#about-desc p {
+    font-size: 12pt;
 }
 
 #about-title{
     color: #333;
+    font-size: 55px;
 }
 
 .button, .button:hover, .button:active{
@@ -305,8 +314,9 @@ footer ul li a {
 
 /*-- EDUCATION --*/
 
-#education-background{
+#education{
     background-image:url(../img/content/education/poly.png);
+    background-attachment: fixed;
     background-position-x: 0%;
     background-position-y: 50%;
     background-repeat:no-repeat;
@@ -329,6 +339,46 @@ footer ul li a {
     margin:3px auto;
     border-bottom:solid 1px #494949;
 }
+
+/*-- SKILLS --*/
+
+.small-image-container{
+    display: inline-block;
+    width: 100px;
+    margin: 15px;
+}
+
+.proficiency{
+    display: inline-flex;
+    float: left;
+    height: 8px;
+    background-color: #fff;
+    border: 1px solid #EEEEEE;
+    border-radius: 2px;
+    width: 100%;
+}
+
+.proficiency>span{
+    background-color: #DDDDE6;
+}
+
+.mild{
+    width: 30%;    
+}
+
+.medium{
+    width: 55%;
+}
+
+.hot{
+    width: 80%;
+}
+
+.spicy{
+    width: 95%;
+}
+
+/*========= MOBILE ADJUSTMENTS =========*/
 
 @media (max-width: 767px) {
 .project-container, .project-container:focus, .project-container:hover, .project-container:active{
@@ -357,7 +407,7 @@ footer ul li a {
 }
 
 
-/*===== GENERAL TEXT FORMATTING =====*/
+/*===== TEXT FORMATTING =====*/
 
 h4{
     font-size: 22px;
@@ -391,10 +441,8 @@ input{
 }
 
 input.button{
-	padding:10px;
 	width:30%;
 	color: #fff;
-    background-color: #cc2020;
 	margin-bottom: 100px;
 }
 
@@ -413,7 +461,7 @@ margin: 0;
 form p input, form p textarea {
 padding: 15px;
 margin: 10px ;
-background-color: #555;
+background-color: #667788;
 border: none;
 }
 
@@ -439,21 +487,16 @@ border: none;
     border-color: #1271d2;
 }
 
+.white-border{
+    border-color: #fff;
+}
+
 .remove-border{
     border: none;
 }
 
 .red{
     color: #cc2020;
-}
-
-.github{
-    color: #fff;
-    text-shadow: 0px 0px 15px rgba(132,0,255,.4);
-}
-
-.github:focus, .github:hover, .github:active{
-    color:#fff;
 }
 
 .text-left{
@@ -470,7 +513,7 @@ border: none;
 	
 .section-title {
     font-family: 'lato',Arial,sans-serif;
-	font-size: 55px;
+	font-size: 48px;
     font-weight: bold;
     margin-top:30px;
     margin-bottom: 10px;
@@ -478,7 +521,7 @@ border: none;
 }
 
 .subsection-title {
-    font-weight:300;
+    font-weight:lighter;
 }
 
 .subtitle {
@@ -486,26 +529,26 @@ border: none;
     font-family:'lato', Arial,sans-serif;
     margin: 20px;
     color: #ffffff;
-   	/* display: inline-block; */
 }
 
-/*
-#education .section-title, #experience .section-title{
-	color: #cc2020;
-}
-*/
-
-#about, #skills, #projects{
+#about{
 	background-color:  #FFFFFF;
      /* #1271d2; */
+}
+
+#skills, #projects{
+    background-color: #ECECEC;
+}
+
+#experience{
+    background-color: #667788;
+}
+
+#experience .section-title{
+    color: White;
+    font-weight: normal;
 }
 
 #contact{
     overflow: hidden;
 }
-/*
-#contact, #skills{
-	background-color:#393939;
-	overflow: hidden;
-}
-*/
