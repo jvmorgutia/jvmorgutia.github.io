@@ -225,7 +225,7 @@ footer ul li a {
 #hero {
     padding-top:110px;
     padding-bottom:100px;
-    background-image:url(../img/texture.png);
+    background-image:url(../img/hero.png);
     background-attachment: fixed;
     background-position-x: 0%;
     background-position-y: 50%;
@@ -376,6 +376,18 @@ footer ul li a {
 
 .spicy{
     width: 95%;
+}
+
+/*-- PROJECTS --*/
+
+#projects{
+    background-image:url(../img/content/projects/background.png);
+    background-attachment: fixed;
+    background-position-x: 0%;
+    background-position-y: 50%;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color:#292929; 
 }
 
 /*========= MOBILE ADJUSTMENTS =========*/
@@ -536,7 +548,7 @@ border: none;
      /* #1271d2; */
 }
 
-#skills, #projects{
+#skills{
     background-color: #ECECEC;
 }
 
@@ -544,7 +556,7 @@ border: none;
     background-color: #667788;
 }
 
-#experience .section-title{
+#experience .section-title, #projects .section-title{
     color: White;
     font-weight: normal;
 }
