@@ -392,23 +392,32 @@ footer ul li a {
 @media (max-width: 767px) {
 .project-container, .project-container:focus, .project-container:hover, .project-container:active{
     display: block;
+    width: auto;
     overflow: hidden;
 }
+
 .expandable-image{
     max-height: 200px;
 }
+
 .body-container {
     padding:0 0px
 }
 
-#hero {
+#hero{
     background-position-y: 60%;
     padding-top: 100px;
 }
+
+#hero, #education, #projects{
+        background-size: unset;
+}
+
 #about-image{
 	width: 50%;
 	padding-left: 2%;
 }
+
 #about-desc{
 	width: 90%;
     text-align: center;
