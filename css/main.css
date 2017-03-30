@@ -404,15 +404,16 @@ footer ul li a {
     padding:0 0px
 }
 
-#hero{
-    background-position-y: 60%;
-    padding-top: 100px;
-}
 
 #hero, #education, #projects{
   background-size: cover;
   background-attachment: scroll;
   background-position: center center;
+}
+#hero{
+    background-position-y: 60%;
+    background-position-x: 0%;
+    padding-top: 100px;
 }
 
 #about-image{
