@@ -401,18 +401,18 @@ footer ul li a {
     padding:0 0px
 }
 
-.hero {
+#hero {
     background-position-y: 60%;
     padding-top: 100px;
 }
-.about-image{
+#about-image{
 	width: 50%;
 	padding-left: 2%;
 }
 #about-desc{
 	width: 90%;
-
-}
+    text-align: center;
+    }
 }
 
 
