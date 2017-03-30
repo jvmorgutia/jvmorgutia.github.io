@@ -112,9 +112,6 @@ footer ul li a {
     margin: 4px;  
 }
 
-
-
-
 .navbar-default .navbar-nav>li>a {
     color:#333;
     -webkit-transition:color .4s;
@@ -278,7 +275,7 @@ footer ul li a {
 #myAvatar {
     margin: 10% auto;
     width:92%;
-	border-radius: 6px;
+	border-radius: 10px;
 	-webkit-box-shadow: -2px -1px 43px -9px rgba(0,0,0,0.75);
     -moz-box-shadow: -2px -1px 43px -9px rgba(0,0,0,0.75);
     box-shadow: -2px -1px 43px -9px rgba(0,0,0,0.75);
@@ -412,7 +409,7 @@ footer ul li a {
 	width: 50%;
 	padding-left: 2%;
 }
-.about-desc{
+#about-desc{
 	width: 90%;
 
 }
