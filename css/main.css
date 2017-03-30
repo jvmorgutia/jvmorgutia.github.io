@@ -410,7 +410,10 @@ footer ul li a {
 }
 
 #hero, #education, #projects{
-        background-size: unset;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #about-image{
