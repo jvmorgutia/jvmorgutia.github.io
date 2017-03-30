@@ -410,8 +410,9 @@ footer ul li a {
 }
 
 #hero, #education, #projects{
-  background-size: auto;
+  background-size: cover;
   background-attachment: scroll;
+  background-position: center center;
 }
 
 #about-image{
