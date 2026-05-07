@@ -4,18 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="author" content="Jvmorgutia">
+    <meta name="author" content="Jesse Morgutia">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Jesse Morgutia's online software engineering portfolio">
     <title>Jesse Morgutia - Software Engineer Portfolio</title>
 
-    <!-- Google Analytics -->
-    <script>
-        /*      To be filled in later :)     */
-    </script>
-
     <!-- Normalize CSS -->
-    <link rel="stylesheet" href "css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <!-- Main CSS-->
@@ -24,9 +19,8 @@
     <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 </head>
 
-<!-- data-spy and data-target are used for Bootstrap's scrollspy -->
-
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="gradientWrap"></div>
@@ -46,24 +40,11 @@
                     <li class="hidden">
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#education">Education</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#experience">Experience</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#skills">Skills</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
+                    <li><a class="page-scroll" href="#about">About</a></li>
+                    <li><a class="page-scroll" href="#projects">Projects</a></li>
+                    <li><a class="page-scroll" href="#experience">Experience</a></li>
+                    <li><a class="page-scroll" href="#education">Education</a></li>
+                    <li><a class="page-scroll" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -78,6 +59,7 @@
                 <p id="hero-title">Jesse Morgutia</p>
                 <hr>
                 <p id="hero-subtitle" class="subtitle">Software Engineer</p>
+                <p id="hero-tagline">Engineering Manager at Origence &nbsp;·&nbsp; Creator of SnapBright</p>
             </div>
             <div class="scroll-down">
                 <a class="btn page-scroll" href="#about">
@@ -87,28 +69,137 @@
         </section>
 
         <!-- About Section -->
-
         <section id="about">
             <div class="section-container">
                 <div id="about-image" class="text-center text-padding">
-                    <img alt="Jesse Morgutia's Picture" src="img/myavatar.jpg" id="myAvatar">
+                    <img alt="Jesse Morgutia" src="img/myavatar.jpg" id="myAvatar">
                 </div>
                 <div id="about-desc" class="text-left text-padding">
-                    <h2 class="section-title text-center" id="about-title"> Hi, I'm Jesse Morgutia</h2>
+                    <h2 class="section-title text-center" id="about-title">Hi, I'm Jesse Morgutia</h2>
                     <hr class="blue-border">
-                    <!--<h4>Software Engineer from So-Cal</h4>-->
-                    <p> 
-                        I am a software engineer located in Los Angeles, California. 
-                        I have a professional background in cloud and application development.
+                    <p>
+                        I'm an engineering manager based in the San Gabriel Valley, California, with a background in cloud and application development. I've spent my career building software in the lending industry and leading engineering teams at scale.
                     </p>
                     <p>
-                        I love technology, both hardware and software. I'm really passionate about automotive <i class="fa fa-car" aria-hidden="true"></i>
+                        I love technology, both hardware and software. I'm passionate about automotive <i class="fa fa-car" aria-hidden="true"></i>
                         and space technology <i class="fa fa-rocket" aria-hidden="true"></i>
                     </p>
                     <p>
-                        Outside of technology I love hiking, driving, motorcycle riding, spending time with the family, and trying new food.
+                        Outside of work I enjoy hiking, driving, motorcycle riding, spending time with family, and trying new food.
                     </p>
-                    <a class="button btn" href="mailto:jesse@morgutia.com" target="_blank">Request My Resume </a>
+                    <a class="button btn" href="mailto:jesse.morgutia@gmail.com" target="_blank">Request My Resume</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="section-container">
+                <h2 class="section-title">Projects</h2>
+                <hr class="blue-border">
+
+                <a href="#contact" class="project-container subsection-container snapbright-project">
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center">
+                        <img src="SnapBright/icon.png" class="snapbright-project-icon">
+                    </div>
+                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                        <h4>SnapBright <span class="project-badge">iOS App</span></h4>
+                        <h5 class="thin">Side Project &nbsp;·&nbsp; SwiftUI</h5>
+                        <p>
+                            A full-featured photo booth app for iPhone and iPad. Built for events, parties, and any occasion that calls for a fun, customizable photo experience — custom layouts, fonts, stickers, and print support.
+                            <strong>Get support →</strong>
+                        </p>
+                    </div>
+                </a>
+
+                <div class="subsection-container skills-grid" id="skills" style="margin-top: 40px;">
+                    <h3 class="subsection-title" style="margin-bottom: 20px; font-size: 22px;">What I Do</h3>
+                    <div class="skill-group">
+                        <h5 class="skill-group-label">Engineering</h5>
+                        <div class="skill-tags">
+                            <span class="skill-tag">C#</span>
+                            <span class="skill-tag">Swift / SwiftUI</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">HTML &amp; CSS</span>
+                            <span class="skill-tag">RESTful APIs</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h5 class="skill-group-label">Tools &amp; Platforms</h5>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Visual Studio</span>
+                            <span class="skill-tag">Xcode</span>
+                            <span class="skill-tag">SQL Server</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Azure</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h5 class="skill-group-label">Practices</h5>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Agile / Scrum</span>
+                            <span class="skill-tag">Team Leadership</span>
+                            <span class="skill-tag">Full Stack Development</span>
+                            <span class="skill-tag">Technical Roadmapping</span>
+                            <span class="skill-tag">iOS Development</span>
+                            <span class="skill-tag">Agentic AI Development</span>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="https://github.com/jvmorgutia" target="_blank" style="display:block; text-align:center; margin-top: 20px;">
+                    <i class="fa fa-github fa-5x" style="color: #fff;"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <div class="section-container">
+                <h2 class="section-title">Work Experience</h2>
+                <hr class="white-border">
+
+                <div class="content-section">
+                    <img class="small-image" src="img/content/work/cudirect.png" alt="Origence">
+                    <h5>ORIGENCE <span style="font-weight:100; font-size:13px;">(formerly CU Direct)</span></h5>
+                    <h6>Ontario, California &nbsp;·&nbsp; 9+ years</h6>
+                    <br>
+
+                    <h4>Manager of Software Engineering</h4>
+                    <h6>Mar 2026 – Present</h6>
+                    <p>
+                        Managing two engineering teams delivering Origence's <strong>Ideal platform</strong>. Responsibilities span people development, technical roadmap, and agile delivery, while staying hands-on technically and driving the team's <strong>adoption of AI tooling</strong> across the development lifecycle.
+                    </p>
+                    <br>
+
+                    <h4>Staff Software Engineer</h4>
+                    <h6>Jun 2024 – Mar 2026</h6>
+                    <p>
+                        Led technical work across Origence's lending platform with a focus on <strong>cloud architecture, team enablement,</strong> and cross-functional delivery.
+                    </p>
+                    <br>
+
+                    <h4>Principal Software Engineer</h4>
+                    <h6>Feb 2021 – May 2024</h6>
+                    <p>
+                        Owned architecture and delivery of enterprise lending solutions. Focused on <strong>cloud development (Azure, Cloud Foundry), messaging queues, front-end development,</strong> and loan fulfillment services.
+                    </p>
+                    <br>
+
+                    <h4>Software Engineer III</h4>
+                    <h6>Feb 2019 – Feb 2021</h6>
+                    <p>
+                        Responsible for development of enterprise solutions for loan fulfillment and consumer services; focused on <strong>cloud and front-end development</strong> using Azure, Cloud Foundry, messaging queues, and Angular.
+                    </p>
+                    <br>
+
+                    <h4>Software Engineer II</h4>
+                    <h6>Dec 2016 – Feb 2019</h6>
+                    <p>
+                        Enhanced and developed new features for Lending 360, with a focus on <strong>third-party service integration and back-end development.</strong>
+                    </p>
+                    <br>
                 </div>
             </div>
         </section>
@@ -119,10 +210,10 @@
                 <h2 class="section-title">Education</h2>
                 <hr class="blue-border">
                 <div id="education-background" class="content-section">
-                    <img alt="Cal Poly" src="img/content/education/calpoly.png" style="height: 80px;">
+                    <img alt="Cal Poly Pomona" src="img/content/education/calpoly.png" style="height: 80px;">
                     <h4>California State Polytechnic University</h4>
                     <h5>Pomona, CA</h5>
-                    <h5>Sept 2010 to June 2015</h5>
+                    <h5>Sept 2010 – June 2015</h5>
                     <h5 class="thick">Bachelor of Science, Computer Science</h5>
                     <h5 class="bottom-border">Relevant Coursework</h5>
                     <div>
@@ -145,274 +236,6 @@
             </div>
         </section>
 
-           <!-- Experience Section -->
-        <section id="experience">
-            <div class="section-container">
-
-                <h2 class="section-title">Work Experience</h2>
-                <hr class="white-border">
-                <div class="content-section">
-                    <img class="small-image" src="img/content/work/cudirect.png">
-
-                    <h5>CU DIRECT</h5>
-                    <h6>Ontario, California</h6>
-                    <br>
-
-                    <h4>Software Engineer II</h4>
-                    <h6>January 2017 to Present</h6>
-                    
-                        <p>
-                            My responsibilities are focused on continuous developement towards CU Direct's Lending software via agile (scrum) developement. 
-                            My most recent projects include: <strong>3rd party service integration, RESTful web services, back end development, and UI developement.</strong>
-                        </p>
-                    <br>
-
-                    <h4>Software Developer I</h4>
-                    <h6>July 2015 to December 2016</h6>
-                    <p>
-                        As a software developer, my responsibilities are focused toward developing new features for CU Direct's Lending software.
-                        My most recent projects include: <strong>web service integration, back end development</strong> using Visual Studio (C#, WPF using MVVM, XAML, SQL, JSON, XML).
-                    </p>
-                    <br>
-
-                    <h4>Development and QA Intern</h4>
-                    <h6>July 2014 to July 2015</h6>
-                    <p>
-                        Responsible for developing and contributing towards advancements of the CU Direct AutoSMART website via 
-                        <strong>full stack, using ASP.NET MVC in Visual Studio</strong> (C#, JavaScript, CSS, Razor and MS SQL Server). 
-                        Engaged in a <strong>daily scrum</strong> with software designers, developers, and QA engineers. 
-                    </p>
-                    <p> 
-                        Also a QA resource for auto buying solutions; focused on verification of application functionality, database integrity and software
-                        design. Reviewed current issues with developers in order to improve project quality prior to, and during test case execution.
-                    </p>
-                    <br>
-                </div>
-
-
-                <div class="content-section">
-                    <img class="small-image" src="img/content/work/bookstore.png" style="height: 60px;">
-                    <h5>Cal Poly Pomona Foundation</h5>
-                    <h6>Pomona, California &nbsp;|&nbsp; Sept 2012 to July 2014</h6>
-                    <br>
-                    <h4>Lead Apple Certified Macintosh Technician</h4>
-                    <p>
-                        Responsible for diagnosing, <strong>troubleshooting and repairing problems</strong> related to computer
-                        hardware, software, and networking. This includes managing and <strong>maintaining multiple servers</strong>                        (client-update, data reporting, and file sharing) in order to maintain proper product presentation
-                        and report appropriate diagnostic results. Equally responsible for creating flyers, booklets, logos,
-                        graphics, and <strong>
-                            maintaining/editing
-                            website data
-                        </strong>. Additionally responsible for training new employees and providing assistance to customer&#39;s
-                        technical needs both as a technician and Verizon Wireless representative. <strong>
-                            Increased customer satisfaction rates for three consecutive
-                            quarters
-                        </strong>, based on Apple GSX reporting.
-                    </p>
-                    <br>
-                </div>
-
-                <div class="content-section">
-                    <img class="small-image " src="img/content/work/bassett.png">
-                    <br>
-                    <h4>Instructional Assistant</h4>
-                    <h5>Bassett High School</h5>
-                    <h6>La Puente, California &nbsp;|&nbsp; Summer 2013</h6>
-                    <p>
-                        Responsible for <strong>leading educational activities</strong> and encouraging student involvement
-                        in the classroom. Provide <strong>tutoring in math/science</strong> subjects in both, one-to-one
-                        and group study environments, with high school level students.
-                    </p>
-                    <br>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills">
-            <div class="section-container">
-
-                <h2 class="section-title">What I Do</h2>
-                <hr class="blue-border">
-
-                <div class="subsection-container">
-                    <h3 class="subsection-title"> Languages </h3>
-                    <hr>
-                    
-                    <div class="small-image-container">
-                        <img class="small-image" alt="C#" src="img/content/skills/code/cs.png">
-                        <span class="proficiency">
-                            <span class="spicy"></span>
-                        </span>
-                    </div>
-
-                    <div class="small-image-container">
-                        <img class="small-image" alt="SQL" src="img/content/skills/code/sql.png">
-                        <span class="proficiency">
-                            <span class="hot"></span>
-                        </span>
-                    </div>
-
-                    <div class="small-image-container">
-                        <img class="small-image" alt="HTML 5" src="img/content/skills/code/html.png">
-                        <span class="proficiency">
-                            <span class="hot"></span>
-                        </span>
-                    </div>
-
-                    <div class="small-image-container">
-                        <img class="small-image" alt="CSS 3" src="img/content/skills/code/css.png">
-                        <span class="proficiency">
-                            <span class="hot"></span>
-                        </span>
-                    </div>
-
-                    <div class="small-image-container">
-                        <img class="small-image" alt="Java" src="img/content/skills/code/java.png">
-                        <span class="proficiency">
-                            <span class="hot"></span>
-                        </span>
-                    </div>
-
-                    <div class="small-image-container">
-                        <img class="small-image" alt="C++" src="img/content/skills/code/cpp.png">
-                        <span class="proficiency">
-                            <span class="medium"></span>
-                        </span>
-                    </div>         
-                </div>
-                
-                <div class="subsection-container">
-                    <h3 class="subsection-title"> Software </h3>
-                    <hr>
-
-                    <div class="small-image-container">
-                        <img class="small-image" alt="Microsoft Visual Studio" src="img/content/skills/visualstudio.png">
-                        <div>Visual Studio</div>
-                    </div>
-
-                    <div class="small-image-container">
-                        <img class="small-image" alt="Microsoft SQL Server" src="img/content/skills/msSQLserver.png">
-                        <div>Microsoft SQL Server</div>
-                    </div>
-
-                    <div class="small-image-container">
-                        <img class="small-image" alt="Eclipse" src="img/content/skills/eclipse.png">
-                        <div>Eclipse</div>
-                    </div>
-
-                    <div class="small-image-container">
-                        <img class="small-image" alt="Adobe Photoshop" src="img/content/skills/ps.png">
-                        <div>Adobe Photoshop</div>
-                    </div>
-
-                    <div class="small-image-container">
-                        <img class="small-image" alt="Adobe Illustrator" src="img/content/skills/ai.png">
-                        <div>Adobe Illustrator</div>
-                    </div>
-
-                    <div class="small-image-container">
-                        <img class="small-image" alt="Adobe Dreamweaver" src="img/content/skills/dw.png">
-                        <div>Adobe Dreamweaver</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-        <!-- Projects Section -->
-        <section id="projects">
-            <div class="section-container">
-                <h2 class="section-title">Projects</h2>
-                <hr class="blue-border">
-                <a href="http://github.com/jvmorgutia/JNotepad" class="project-container subsection-container" target="_blank">
-                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                        <img src="img/content/projects/jnotepad.png" class="expandable-image">
-                    </div>
-                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-                        <h4> JNotepad </h4>
-                        <h5 class="thin">Individual Project</h5>
-                        <p>
-                            An enhanced clone of Microsoft's Notepad with additional features and syntax highlighting based on different computer languages.
-                            Compatible with OSX, Linux, and Windows. (for OSX, the standard windowed menu bar is displayed).
-                        </p>
-                    </div>
-                </a>
-
-                <a href="http://github.com/jvmorgutia/BookMarker" class="project-container subsection-container" target="_blank">
-                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                        <img src="img/content/projects/qm.png" class="expandable-image">
-                    </div>
-                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-                        <h4> BookMarker </h4>
-                        <h5 class="thin">Individual Project</h5>
-
-                        <p>
-                            A web content editor used as a bookmark with any browser. Whenever needed, simply select text and click on the desired version
-                            of QuickMark. Current versions include
-                            <mark style="background: yellow;">highlighting</mark> and tExTCaSE changes.
-                        </p>
-                    </div>
-                </a>
-                
-                <a href="http://github.com/jvmorgutia/CosmosKernel" class="project-container subsection-container" target="_blank">
-                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                        <img src="img/content/projects/cosmosk.png" class="expandable-image">
-                    </div>
-                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-                        <h4> CosmosKernel</h4>
-                        <h5 class="thin">Group Project
-                            <br>Role: Developer</h5>
-                        <p>
-                            A command-line based operating system kernel. Implemented functionalities include the running of batch files, several commands,
-                            and an integrated file system. This kernel was created based on the CosmosOS user kit. Written in
-                            C#
-                        </p>
-                    </div>
-
-                </a>
-                <a href="http://github.com/jvmorgutia/SurfCity" class="project-container subsection-container" target="_blank">
-                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                        <img src="img/content/projects/sc.png" class="expandable-image">
-                    </div>
-                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-                        <h4> Surf City Shop </h4>
-                        <h5 class="thin">Individual Project</h5>
-
-
-                        <p>
-                            An webpage template with custom logo following an 'indie' theme. Includes tabbed sections which hide and display
-                            content. Created using HTML5, and CSS3. Free for all commercial and non-commercial use.
-                        </p>
-                    </div>
-                </a>
-
-                <a href="http://github.com/jvmorgutia/ToyCompiler" class="project-container subsection-container display-block" target="_blank">
-
-
-                    <h4> ToyCompiler</h4>
-                    <h5 class="thin">Group Project
-                        <br>Role: Developer / Analyst</h5>
-                    <p>
-                        A compiler for a new 'Toy' computer language. Currently included are Lexical and Semantical Analyzers for the compiler, a
-                        trie data structure token recorder, and a shift reduce parser. Created using Flex and Bison. Written
-                        in C.
-                    </p>
-                </a>
-
-                <a href="http://github.com/jvmorgutia" target="_blank">
-                    <i class="fa fa-github fa-5x"></i>
-                </a>
-
-
-
-
-
-
-            </div>
-        </section>
-
         <!-- Contact Section -->
         <section id="contact">
             <div class="section-container bottom">
@@ -421,23 +244,18 @@
                 <div>
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                         <br>
-                        <h4>Contact details</h4>
-                       
+                        <h4>Get in touch</h4>
                         <br>
                         <p>
-                            I am currently located in the heart of the San Gabriel Valley, but looking for positions in all of Southern California. If
-                            my experience is relevant to the qualifications you seek, please send me an email, text, or call
-                            me. I would love to hear from you!
+                            Based in the San Gabriel Valley, Los Angeles area. Whether it's about work, a collaboration, or <strong>SnapBright support</strong> — feel free to reach out.
                         </p>
                     </div>
 
-
                     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-                        <h4>Shoot me a message!</h4>
-
-                        <form action="mailto:jesse@morgutia.com">
-                            <p><input style="opacity: 1;" name="subject" class="text " type="text" id="name" placeholder="Subject"></p>
-                            <p><textarea style="opacity: 1;" name="body" class="textarea" type="body" id="message" placeholder="Your Message"></textarea>
+                        <h4>Send a message</h4>
+                        <form action="mailto:jesse.morgutia@gmail.com">
+                            <p><input style="opacity: 1;" name="subject" class="text" type="text" id="name" placeholder="Subject"></p>
+                            <p><textarea style="opacity: 1;" name="body" class="textarea" type="body" id="message" placeholder="Your Message"></textarea></p>
                             <p><input type="submit" value="Send" id="submit" class="button"></p>
                         </form>
                     </div>
@@ -448,29 +266,22 @@
     </section>
 
     <!-- Footer -->
-
     <footer class="footer">
         <div class="container">
-            <!--a class="page-scroll" href="#page-top"><img src="img/up-arrow.png" style="height: 45px; margin: 2px; opacity: 0.6;"></a-->
-            <h4> Copyright &copy; 2017 - Jesse Morgutia </h4><br>
+            <h4>Copyright &copy; 2026 Jesse Morgutia. All rights reserved.</h4><br>
             <ul>
-                <li><a href="http://linkedin.com/in/jvmorgutia" class="footer-link" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
-                <li><a href="http://github.com/jvmorgutia" class="footer-link" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
+                <li><a href="https://linkedin.com/in/jvmorgutia" class="footer-link" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
+                <li><a href="https://github.com/jvmorgutia" class="footer-link" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
             </ul>
         </div>
     </footer>
 
-
-    <!-- jQuery Version 1.11.0 -->
+    <!-- jQuery -->
     <script src="js/jquery-1.11.0.js"></script>
-
     <!-- Bootstrap JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
-        crossorigin="anonymous"></script>
-        <!-- Other JavaScript -->
-        <script src="js/jquery.easing.min.js"></script>
-        <script src="js/main.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
-
 </html>

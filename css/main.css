@@ -1,6 +1,4 @@
-@import "http://fonts.googleapis.com/css?family=Open+Sans:100,400,300";
-@import "http://fonts.googleapis.com/css?family=Nunito:400,300";
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400);
+@import "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Lato:wght@100;300;400;700&display=swap";
 
 html {
     width:100%;
@@ -172,6 +170,8 @@ footer ul li a {
     padding: 20px;
     margin: 30px;
     background-color: #FFF;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
 }
 
 .content-section {
@@ -179,12 +179,8 @@ footer ul li a {
     margin:30px auto;
     padding:20px 40px;
     background-color:#FFF;
-    
-    /* 
-    background-color:rgba(255,255,255,.2);   
-    border: solid #494949 1px;
-
-    */
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
 }
 
 .small-image {
@@ -243,7 +239,16 @@ footer ul li a {
 }
 
 #hero-subtitle{
-    font-weight:300; 
+    font-weight:300;
+}
+
+#hero-tagline {
+    font-size: 16px;
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: 300;
+    color: rgba(255,255,255,0.65);
+    margin-top: 12px;
+    letter-spacing: 0.3px;
 }
 
 
@@ -302,12 +307,16 @@ footer ul li a {
 
 .button, .button:hover, .button:active{
     margin-top: 10px;
-	padding:15px;
-	color: #fff;
-	border: none;
-	background: #cc2020;
-    border-radius: 0;
+    padding: 12px 28px;
+    color: #fff;
+    border: none;
+    background: linear-gradient(135deg, #1271d2, #0E58A4);
+    border-radius: 8px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    transition: opacity 0.2s;
 }
+.button:hover { opacity: 0.88; }
 
 /*-- EDUCATION --*/
 
@@ -572,4 +581,69 @@ border: none;
 
 #contact{
     overflow: hidden;
+}
+
+/* -- SKILLS TAGS -- */
+.skills-grid {
+    text-align: left;
+    padding: 24px 28px;
+}
+
+.skill-group {
+    margin-bottom: 24px;
+}
+
+.skill-group:last-child { margin-bottom: 0; }
+
+.skill-group-label {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-tag {
+    display: inline-block;
+    background: #f0f4ff;
+    color: #1271d2;
+    border: 1px solid #d0e0f8;
+    border-radius: 6px;
+    padding: 5px 12px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* -- SNAPBRIGHT -- */
+.snapbright-project {
+    border-left: 4px solid #1271d2;
+}
+
+.snapbright-project-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 22px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    margin: 10px auto;
+    display: block;
+}
+
+.project-badge {
+    display: inline-block;
+    background: #1271d2;
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 4px;
+    vertical-align: middle;
+    margin-left: 8px;
+    letter-spacing: 0.3px;
 }
